@@ -1,0 +1,113 @@
+############################################
+# Angular / Node / Frontend
+############################################
+
+# Node modules
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Angular build output
+dist/
+.tmp/
+out-tsc/
+.angular/
+.cache/
+coverage/
+
+# IDE - VS Code
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+!.vscode/launch.json
+!.vscode/tasks.json
+
+# IDE - WebStorm / IntelliJ
+.idea/
+*.iml
+
+# Environment files (if sensitive)
+src/environments/environment.prod.ts
+src/environments/environment.local.ts
+
+# OS files
+.DS_Store
+Thumbs.db
+
+############################################
+# .NET / ASP.NET Core
+############################################
+
+# Build results
+bin/
+obj/
+
+# Rider
+.idea/
+*.sln.iml
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Visual Studio cache
+.vs/
+
+# Logs
+*.log
+
+# Test results
+TestResults/
+*.trx
+*.coverage
+*.coveragexml
+
+# Publish output
+publish/
+*.publishsettings
+
+# NuGet
+*.nupkg
+*.snupkg
+packages/
+.nuget/
+
+# Azure
+PublishScripts/
+
+# Entity Framework migrations snapshot (optional if auto-generated)
+*.Designer.cs
+
+# Dotnet CLI
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+############################################
+# General
+############################################
+
+# Backup & temp files
+*.tmp
+*.temp
+*.bak
+*.swp
+*~
+
+# Secrets
+appsettings.Development.json
+appsettings.Local.json
+secrets.json
+
+# Docker
+docker-compose.override.yml
+
+# Logs
+logs/
