@@ -1,0 +1,59 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f4f6f9;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.device-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.device-table th {
+  background-color: #1976d2;
+  color: white;
+  padding: 12px;
+  text-align: left;
+}
+
+.device-table td {
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+}
+
+.device-table tr:hover {
+  background-color: #f5f9ff;
+}
+
+.badge {
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.online {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.offline {
+  background-color: #f8d7da;
+  color: #721c24;
+}

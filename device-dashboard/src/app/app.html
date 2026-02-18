@@ -1,0 +1,29 @@
+<div class="container">
+  <h1>📡 Device Monitoring Dashboard</h1>
+
+  <table class="device-table">
+    <thead>
+      <tr>
+        <th>Device ID</th>
+        <th>Status</th>
+        <th>Online/Offline</th>
+        <th>Last Heartbeat</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr *ngFor="let device of devices">
+        <td>{{ device.deviceId }}</td>
+        <td>{{ device.status }}</td>
+        <td>
+          <span 
+            class="badge"
+            [ngClass]="device.isOnline ? 'online' : 'offline'">
+            {{ device.isOnline ? 'ONLINE' : 'OFFLINE' }}
+          </span>
+        </td>
+        <td>{{ device.lastHeartbeat | date:'medium' }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
