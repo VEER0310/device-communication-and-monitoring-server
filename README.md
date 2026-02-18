@@ -1,7 +1,7 @@
 
 ---
 
-# 📡 Device Management & Monitoring System
+# Device Management & Monitoring System
 
 A real-time **TCP multi-client device monitoring system** built with:
 
@@ -12,7 +12,7 @@ A real-time **TCP multi-client device monitoring system** built with:
 
 ---
 
-## 🚀 Overview
+## Overview
 
 This project implements a **multi-client TCP server** that manages device connections, tracks their state, and monitors heartbeats in real time.
 
@@ -20,15 +20,15 @@ An Angular dashboard displays device status updates instantly using WebSockets.
 
 The system fully satisfies all core requirements:
 
-* ✅ TCP Multi-Client Support
-* ✅ Device State Management
-* ✅ Background Heartbeat Monitoring
-* ✅ Concurrency Control (Max 5 Commands)
-* ✅ Thread Safety
+* - TCP Multi-Client Support
+* - Device State Management
+* - Background Heartbeat Monitoring
+* - Concurrency Control (Max 5 Commands)
+* - Thread Safety
 
 ---
 
-## 🏗 Architecture
+## Architecture
 
 ### 🔹 Backend (.NET 10)
 
@@ -58,7 +58,7 @@ HeartbeatMonitor → Background Service
 
 ---
 
-## ⚙ Functional Requirements Implementation
+## Functional Requirements Implementation
 
 ### 1️⃣ TCP Multi-Client Server
 
@@ -124,7 +124,7 @@ All shared resources are protected.
 
 ---
 
-## 🌐 Real-Time Web Dashboard
+## Real-Time Web Dashboard
 
 Angular dashboard features:
 
@@ -142,7 +142,7 @@ ws://localhost:8080/ws
 
 ---
 
-## 🧪 How To Run
+## How To Run
 
 ### 1️⃣ Start Backend Server
 
@@ -176,9 +176,9 @@ dotnet run
 
 ---
 
-## 🧪 Testing Scenarios
+## Testing Scenarios
 
-### ✅ Test 1 — Register Device
+### Test 1 — Register Device
 
 ```
 REGISTER|D1
@@ -188,7 +188,7 @@ Device appears instantly on dashboard.
 
 ---
 
-### ✅ Test 2 — Status Update
+### Test 2 — Status Update
 
 ```
 STATUS|D1|RUNNING
@@ -198,7 +198,7 @@ Dashboard updates in real time.
 
 ---
 
-### ✅ Test 3 — Heartbeat Monitoring
+### Test 3 — Heartbeat Monitoring
 
 Start heartbeat:
 
@@ -206,7 +206,7 @@ Start heartbeat:
 
 ---
 
-### ✅ Test 4 — Auto Offline Detection
+### Test 4 — Auto Offline Detection
 
 Stop heartbeat:
 
@@ -214,7 +214,7 @@ Stop heartbeat:
 
 ---
 
-### ✅ Test 5 — Flood Test (Concurrency)
+### Test 5 — Flood Test (Concurrency)
 
 Send 20 commands simultaneously.
 
@@ -224,7 +224,7 @@ Send 20 commands simultaneously.
 
 ---
 
-## 📌 Technologies Used
+## Technologies Used
 
 * .NET 10
 * C#
@@ -232,18 +232,6 @@ Send 20 commands simultaneously.
 * WebSockets
 * Angular CLI 21.1.1
 * Node 20.20.0
-
----
-
-## 🎯 Exam Requirements Coverage
-
-| Requirement                 | Status  |
-| --------------------------- | ------  |
-| TCP Multi-Client Support    | ✅      |
-| Device State Tracking       | ✅      |
-| Background Heartbeat Engine | ✅      |
-| Max 5 Concurrent Commands   | ✅      |
-| Thread Safety               | ✅      |
 
 ---
 
